@@ -4,6 +4,7 @@ export default defineConfig({
   lang: 'ja-JP',
   title: 'CLRS 講義ノート',
   description: 'CLRS に沿って学ぶアルゴリズムの講義ノート',
+  base: '/clrs/',
   cleanUrls: true,
   markdown: {
     math: true
@@ -32,4 +33,3 @@ export default defineConfig({
     }
   }
 })
-
