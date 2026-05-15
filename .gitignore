@@ -1,0 +1,10 @@
+node_modules
+docs/.vitepress/cache
+docs/.vitepress/.temp
+docs/.vitepress/dist
+
+# C++ build outputs
+a.out
+merge
+*.out
+implementations/cpp/build

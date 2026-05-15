@@ -1,0 +1,28 @@
+{
+  "terminal.integrated.defaultProfile.windows": "wsl",
+  "terminal.integrated.profiles.windows": {
+    "wsl": {
+      "path": ["C:\\Windows\\System32\\wsl.exe"]
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["-l"],
+      "env": {
+        "PATH": "~/.volta/bin:~/.local/bin:/bin:/usr/bin:/usr/local/bin"
+      }
+    }
+  },
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "vector": "cpp"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "cpp": "mkdir -p \"$workspaceRoot/implementations/cpp/build/code-runner\" && cd \"$dir\" && g++ -std=c++17 -O0 -g \"$fileName\" -o \"$workspaceRoot/implementations/cpp/build/code-runner/$fileNameWithoutExt\" && \"$workspaceRoot/implementations/cpp/build/code-runner/$fileNameWithoutExt\""
+  }
+}

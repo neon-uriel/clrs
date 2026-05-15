@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++: Debug active file (CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/implementations/cpp/build/debug/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "C++: build active file for CodeLLDB",
+      "sourceLanguages": ["cpp"]
+    }
+  ]
+}

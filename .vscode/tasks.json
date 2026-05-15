@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C++: ensure debug build dir",
+      "type": "shell",
+      "command": "mkdir",
+      "args": [
+        "-p",
+        "${workspaceFolder}/implementations/cpp/build/debug"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "C++: build active file for CodeLLDB",
+      "type": "cppbuild",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=c++17",
+        "-O0",
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/implementations/cpp/build/debug/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "C++: ensure debug build dir",
+      "dependsOrder": "sequence",
+      "detail": "Builds the active C++ file with g++ for CodeLLDB."
+    }
+  ]
+}
