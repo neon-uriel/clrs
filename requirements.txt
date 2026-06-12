@@ -1,0 +1,23 @@
+# CLRS 講義ノート用 Python 環境
+# Scientific Agent Skills（.claude/skills/）が利用するパッケージ群
+# 作成: uv venv --python 3.12 .venv && uv pip install -r requirements.txt
+
+# 記号計算（sympy スキル：マスター定理・漸化式の検証など）
+sympy>=1.14
+
+# 数値計算（sympy の lambdify / scientific-visualization）
+numpy
+scipy
+
+# 可視化（scientific-visualization スキル）
+matplotlib
+seaborn
+plotly
+
+# データ処理・統計（statistical-analysis スキル）
+pandas
+statsmodels
+
+# 文献検索（paper-lookup スキル）
+requests
+PyPDF2

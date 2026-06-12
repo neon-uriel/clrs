@@ -3,6 +3,11 @@ docs/.vitepress/cache
 docs/.vitepress/.temp
 docs/.vitepress/dist
 
+# Python
+.venv/
+__pycache__/
+*.pyc
+
 # C++ build outputs
 a.out
 merge
